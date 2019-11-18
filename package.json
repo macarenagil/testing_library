@@ -1,0 +1,12 @@
+{
+  "name": "Testing_library",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  },
+  "scripts": {
+"dev": "browser-sync start --server 'app' --files 'app'"
+  }
+}
