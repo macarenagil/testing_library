@@ -3,11 +3,19 @@ function it (message, fn) {
     fn()
 }
 
-function should (condition, ) {
+function should (condition) {
 if (condition) {
 console.log('✔')
 }
 else {
     console.log('✗')
+}
+}
+
+function hope (predicate) {
+return {
+    toBe: (x) => {
+        should(predicate === x);
+    }
 }
 }
